@@ -1,0 +1,71 @@
+.titulo {
+    text-align: center;
+}
+
+.div-calculadora {
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora {
+    border: black 2px solid;
+    width: 450px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.84);
+}
+
+.calculadora .painel {
+    margin: 1.5em;
+    width: 400px;
+    height: 150px;
+    color: #fff ;
+    border: #18253a 6px solid;;
+    background-color: #6f6f6fb8;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+
+.calculadora .painel .conteudo-painel{
+    font-size: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.calculadora .painel .conteudo-painel .numeros-digitados {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.calculadora .calculadora-conteudo {
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: 2em 2em 2em 2em;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid black;
+    width: 50px;
+    height: 45px;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    background-color: #6d6d6d;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.box-sinais {
+    background-color: #708476;
+}
+
+.box-igual {
+    border: 1px solid black;
+    width: 80px;
+    height: 45px;
+    margin-top: 2em;
+    margin-left: 1em;
+    background-color: #ff5900ed;
+    cursor: pointer;
+}
