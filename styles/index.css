@@ -38,6 +38,12 @@
 
 }
 
+.calculadora .painel .conteudo-painel .div-numeros-antigos {
+    display: flex;
+    justify-content: end;
+    padding-left: 8em;
+}
+
 .calculadora .calculadora-conteudo {
     display: grid;
     grid-template-columns: .5fr .5fr .5fr .5fr;

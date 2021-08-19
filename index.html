@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles/index.css">
-    <title>Calculadora JS</title>
-</head>
-<body>
-<div class="titulo">
-    <h2>Portfólio Allan Bontempo</h2>
-    <h3>Calculadora JS</h3>
-</div>
-<div class="div-calculadora">
-    <div class="calculadora">
-        <div class="painel">
-            <div class="conteudo-painel">
-                <div style="margin-right: .3em; margin-top: 1em" class="numeros-digitados" >
-                    <span >
-                         teste
-                    </span>
-                </div>
-                <div style="margin-right: .2em;">
-                   <span>
-                        teste 2
-                   </span>
-                </div>
-
-            </div>
-
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles/index.css">
+        <title>Calculadora JS</title>
+    </head>
+    <body>
+        <div class="titulo">
+            <h2>Portfólio Allan Bontempo</h2>
+            <h3>Calculadora JS</h3>
         </div>
-        <div class="calculadora-conteudo">
-            <div class="coluna-numero-1">
-                <div class="box">
-                    <p>9</p>
+        <div class="div-calculadora">
+            <div class="calculadora">
+                <div class="painel">
+                    <div class="conteudo-painel">
+                        <div style="margin-right: .3em; margin-top: 1em" class="numeros-digitados" >
+                            <span id="numeros-atuais">
+                                 0
+                            </span>
+                        </div>
+                        <div class="div-numeros-antigos" style="margin-right: .2em;">
+                           <span id="numeros-antigos">
+                                teste 2
+                           </span>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="box">
-                    <p>6</p>
-                </div>
-                <div class="box">
-                    <p>3</p>
-                </div>
-                <div class="box">
-                    <p>C</p>
-                </div>
-            </div>
-            <div class="coluna-numero-2">
-                <div class="box">
-                    <p>8</p>
-                </div>
-                <div class="box">
-                    <p>5</p>
-                </div>
-                <div class="box">
-                    <p>2</p>
-                </div>
-                <div class="box">
-                    <p>0</p>
-                </div>
-            </div>
-            <div class="coluna-numero-3">
-                <div class="box">
-                    <p>7</p>
-                </div>
-                <div class="box">
-                    <p>4</p>
-                </div>
-                <div class="box">
-                    <p>1</p>
-                </div>
-                <div class="box">
-                    <p>.</p>
-                </div>
-            </div>
-            <div class="coluna-numero-4">
-                <div class="box box-sinais">
-                    <p>*</p>
-                </div>
-                <div class="box box-sinais">
-                    <p>/</p>
-                </div>
-                <div class="box box-sinais">
-                    <p>-</p>
-                </div>
-                <div class="box box-sinais">
-                    <p>+</p>
-                </div>
-                <div class="box-igual">
-                    <p>=</p>
+                <div class="calculadora-conteudo">
+                    <div class="coluna-numero-1">
+                        <div  onclick="calcular('9')" class="box">
+                            <p id="9">9</p>
+                        </div>
+                        <div onclick="calcular('6')" class="box">
+                            <p id="6">6</p>
+                        </div>
+                        <div onclick="calcular('3')" class="box">
+                            <p id="3">3</p>
+                        </div>
+                        <div onclick="calcular('C')" class="box">
+                            <p id="C">C</p>
+                        </div>
+                    </div>
+                    <div class="coluna-numero-2">
+                        <div onclick="calcular('8')" class="box">
+                            <p id="8">8</p>
+                        </div>
+                        <div onclick="calcular('5')" class="box">
+                            <p id="5">5</p>
+                        </div>
+                        <div onclick="calcular('2')" class="box">
+                            <p id="2">2</p>
+                        </div>
+                        <div onclick="calcular('0')" class="box">
+                            <p id="0">0</p>
+                        </div>
+                    </div>
+                    <div class="coluna-numero-3">
+                        <div onclick="calcular('7')" class="box">
+                            <p id="7">7</p>
+                        </div>
+                        <div  onclick="calcular('4')" class="box">
+                            <p id="4">4</p>
+                        </div>
+                        <div onclick="calcular('1')" class="box">
+                            <p id="1">1</p>
+                        </div>
+                        <div onclick="calcular('.')" class="box">
+                            <p id=".">.</p>
+                        </div>
+                    </div>
+                    <div class="coluna-numero-4">
+                        <div onclick="calcular('*')" class="box box-sinais">
+                            <p id="*">*</p>
+                        </div>
+                        <div onclick="calcular('/')" class="box box-sinais">
+                            <p id="/">/</p>
+                        </div>
+                        <div onclick="calcular('-')" class="box box-sinais">
+                            <p id="-">-</p>
+                        </div>
+                        <div onclick="calcular('+')" class="box box-sinais">
+                            <p id="+">+</p>
+                        </div>
+                        <div onclick="calcular('=')" class="box-igual">
+                            <p id="=">=</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div>
-</div>
+        <script src="./js/index.js"></script>
 
-
-</body>
+    </body>
 </html>
