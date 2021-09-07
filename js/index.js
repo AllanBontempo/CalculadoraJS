@@ -1,11 +1,12 @@
 let telaAntigaSemNumero = true;
+const telaAtual = document.getElementById('numeros-atuais');
+const telaAntiga = document.getElementById('numeros-antigos');
+
 
 function calcular(id) {
 
 
     const valor = document.getElementById(id);
-    const telaAtual = document.getElementById('numeros-atuais');
-    const telaAntiga = document.getElementById('numeros-antigos');
 
     let somar = false;
     let subtrair = false;
@@ -98,11 +99,41 @@ function calcular(id) {
     } else if (parseFloat(telaAtual.innerHTML) === 0){
         telaAtual.innerHTML = valor.innerHTML;
     } else {
-        console.log('entrei aqui3')
-
         if (telaAtual.innerHTML.length >= 16) {
             telaAtual.innerHTML = telaAtual.innerHTML.slice(1, 16);
         }
         telaAtual.innerHTML += valor.innerHTML;
     }
+}
+
+function resultado() {
+    if (telaAntigaSemNumero) {
+        alert('Informe um sinal para poder achar o resultado!')
+    } else {
+        const splitSoma = telaAntiga.innerHTML.split(' + ');
+        const splitSubtracao = telaAntiga.innerHTML.split(' - ');
+        const splitDivisao = telaAntiga.innerHTML.split(' / ');
+        const splitMultiplicacao = telaAntiga.innerHTML.split(' * ');
+
+        console.log(splitSoma.length);
+        console.log(splitSubtracao.length);
+        console.log(splitDivisao.length);
+        console.log(splitMultiplicacao.length);
+
+        if (splitSoma.length > 1) {
+            telaAntiga.innerHTML = eval(telaAntiga.innerHTML + telaAtual.innerHTML) + ' + ';
+        } else if (splitSubtracao.length > 1) {
+            telaAntiga.innerHTML = eval(telaAntiga.innerHTML + telaAtual.innerHTML) + ' - ';
+        } else if (splitDivisao.length > 1) {
+            telaAntiga.innerHTML = eval(telaAntiga.innerHTML + telaAtual.innerHTML) + ' / ';
+        } else if (splitMultiplicacao.length > 1) {
+            telaAntiga.innerHTML = eval(telaAntiga.innerHTML + telaAtual.innerHTML) + ' * ';
+        }
+    }
+
+}
+
+function limpar() {
+    telaAtual.innerHTML = '0';
+    telaAntiga.innerHTML = '0';
 }
