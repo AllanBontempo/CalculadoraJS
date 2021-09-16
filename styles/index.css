@@ -1,5 +1,13 @@
+body {
+    background-color: #788282;
+}
+
 .titulo {
     text-align: center;
+}
+
+.titulo h2, .titulo h3 {
+    color: #f1f1f1;
 }
 
 .div-calculadora {
@@ -9,14 +17,15 @@
 
 .calculadora {
     border: black 2px solid;
-    width: 450px;
+    border-radius: 2em;
+    width: 371px;
     height: 700px;
-    background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgb(31 29 29);
 }
 
 .calculadora .painel {
     margin: 1.5em;
-    width: 400px;
+    width: 305px;
     height: 150px;
     color: #fff ;
     border: #18253a 6px solid;;
@@ -41,12 +50,11 @@
 .calculadora .painel .conteudo-painel .div-numeros-antigos {
     display: flex;
     justify-content: end;
-    padding-left: 8em;
 }
 
 .calculadora .calculadora-conteudo {
     display: grid;
-    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-columns: .2fr .2fr .2fr .2fr;
     grid-template-rows: 2em 2em 2em 2em;
     text-align: center;
 }
@@ -74,4 +82,29 @@
     margin-left: 1em;
     background-color: #ff5900ed;
     cursor: pointer;
+}
+
+.div-numeros:hover {
+    background-color: #373f5c;
+}
+
+.numeros:hover {
+    transform: scale(1.5);
+}
+
+
+.imagens {
+    z-index: -1;
+    position: absolute;
+    background-image: url("../img/sinais.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 99.5%;
+    height: 85%;
+}
+
+
+.sinais {
+    height: 50em;
+
 }
